@@ -127,3 +127,76 @@ $$
 \end{aligned}
 $$
 与条件矛盾, 故$P(A(m)) \neq P(B(m))$, 他们的值已经在上面给出.
+
+当$m=0$时,
+...
+...
+
+
+#### Problem 9
+若$b >= 2$,
+$$
+\begin{aligned}
+B_2 &= B_2(B_1+B_1^C) \\
+   &= B_2B_1 + B_2B_1^C \\
+P(B_2) &= P(B_2B_1 + B_2B_1^C) \\
+  &= P(B_2B_1) + P(B_2B_1^C) \\
+  &= P(B_2|B_1)P(B_1) + P(B_2|B_1^C)P(B_1^C) \\
+  &= (\frac{a/(a+b)})^2 + \frac{b}{a+b} \cdot \frac{a+1}{a+b} \\
+  &= \frac{a^2+ab+1}{(a+b)^2} .
+\end{aligned}
+$$
+同理
+$$
+\begin{aligned}
+P(B_3) &= P(B_3 | B_1 B_2)P(B_1 B_2) + \\
+          &\qquad P(B_3 | B_1^C B_2)P(B_1^CB_2) + \\
+          &\qquad P(B_3 | B_1^C B_2^C)P(B_1^CB_2^C) + \\
+          &\qquad P(B_3 |B_1 B_2^C)P(B_1B_2^C) \\
+      &= (\frac{a}{a+b})^3 + \frac{a+1}{a+b}(\frac{b(a+1)+ab}{(a+b)^2}) + \frac{a+2}{a+b} \cdot \frac{a(a+1)}{(a+b)^2}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+P(B_3|B_2) &= \frac{P(B_3B_2)}{P(B_2)} \\
+  &= \frac{P(B_3 B_2(B_1+B_1^C))}{P(B_2)} \\
+  &= \frac{P(B_3 B_2 B_1) + P(B_3B_2B_1^C)}{P(B_2)} \\
+  &= \frac{P(B_3 | B_2 B_1)P(B_2 B_1) + P(B_3 |B_2 B_1^C)P(B_2B_1^C)}{P(B_2)} \\
+  &= (\frac{a}{a+b})^3+(\frac{(a+1)^2 b}{(a+b)^3}) \cdot \frac{(a+b)^2}{a^2+ab+1} \\
+  &= \frac{a^3+a^2b+ab+1}{(a+b)(a^2+ab+1)} 
+\end{aligned}
+$$
+
+#### Problem 10.1
+
+记A=随机抽一人为男人,
+记B=随机抽一人为色盲.
+$$
+P(A) = 0.51, P(B|A) = 0.02, P(B|A^C) = 0.0025
+$$
+所求为$P(A|B)$.
+$$
+\begin{aligned}
+P(A|B) &= \frac{P(AB)}{P(B)} \\
+  &= \frac{P(B|A)P(A)}{P(BA) + P(BA^C)} \\
+  &= \frac{0.02 \times 0.51}{0.02 \times 0.51 + P(B|A^C)P(A^C)} \\
+  &\approx 89.3%.
+\end{aligned}
+$$
+
+#### Problem 10.2
+记A(n)为掷铜板n次出现正面, B(n)为在n的盒子中抽出一个球,抽到白球.
+C为甲胜.
+$$P(A(n)) = \frac{1}{2}^n$$
+$$P(B(n)) = \frac{1}{n+1}$$
+$$
+\begin{aligned}
+C &= A(1)B(1) + A(2)B(2) + ... + A(n)B(n) + ... \\
+  &= \sum_{n=1}^{\infty} A(n)B(n) \\
+  &= \sum_{n=1}^{\infty} \frac{1}{2}^n \cdot \frac{1}{1+n}\\
+  &\leq \sum_{n=1}^{\infty} (\frac{1}{2})^n \cdot \frac{1}{2} \\
+  &= \frac{1}{2}.
+\end{aligned}
+对乙有利.
+$$
