@@ -77,12 +77,18 @@ $$
 记B为随机去一张, 下面为黑色.
 所求为$P(B|A)$
 
-$$P(AB) = \frac{1}{3}$$
-$$P(A) = \frac{2}{3}$$
-$$P(B|A) = \frac{P(AB)}{P(A)} = \frac{1}{2}.$$
+$$P(AB) = \frac{1}{6}$$
+$$P(A) = \frac{1}{2}$$
+$$P(B|A) = \frac{P(AB)}{P(A)} = \frac{1}{3}.$$
 
 #### Problem 5
-如果抓阄顺序是随机的那么公平.
+
+$$
+\begin{aligned}
+P(A_i) &= \frac{n-1}{n} \cdot \frac{n-2}{n-1} \cdot ... \cdot {\frac}{1}{i} \\
+  &= \frac{1}{n}
+\end{aligned]
+$$
 
 #### Problem 6
 设A为每部电梯至少有一个乘客
