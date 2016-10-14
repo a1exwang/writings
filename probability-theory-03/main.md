@@ -87,3 +87,13 @@ $$
 F(x) = P(X \leqslant x)
 \end{aligned}
 $$
+
+#### Problem 8
+$$
+\begin{aligned}
+  Var(X) &= \sum_{i} (x_i - E(X))^2 \\
+  E(X^2) &= \sum_i x_i^2 \cdot P(X=x_i) \\
+  Var(X) - E(X^2) &= \sum_i (x_i^2 - 2E(X)x_i + E(X)^2 - x_i^2P(X=x_i)) \\
+  &= nE(X)^2 + \sum_i x_i^2 - 2E(X) \sum_i x_i - \sum_i x_i^2P(X=x_i) \\
+\end{aligned}
+$$
