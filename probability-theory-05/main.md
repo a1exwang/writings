@@ -36,6 +36,8 @@ $$
 $$
 端点的值不影响随机变量的分布函数, 故可以规定$X \in [0,1)$.
 
+3. 
+
 4. 随机变量X, Y
 设cdf为f(x,y),
 $$
@@ -67,6 +69,11 @@ $$
 $$
 
 6. 二元正态分布编辑密度的计算
+$$
+\begin{aligned}
+  1
+\end{aligned}
+$$
 
 7. $logY \sim N(a,\sigma^2)$
 $$
@@ -79,7 +86,7 @@ $$
 \end{aligned}
 $$
 
-8. 
+8. 密度函数
 $$
 \begin{aligned}
   \iint{x^2+y^2 \leq 1} \frac{c}{1+x^2+y^2} dS  &= 1\\
@@ -94,4 +101,7 @@ $$
   f_y(x) &= tan(\sqrt(\frac{1-x^2}{1+x^2} \frac{c}{1+x^2})) \frac{2}{\pi ln2 (1+x^2)} \\
 \end{aligned}
 $$
-f_x(y) 同理.
+f_x(y) 同理. 所以X,Y不独立
+
+9. 
+
